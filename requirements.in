@@ -1,0 +1,9 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+httpx==0.28.1
+pydantic-settings==2.9.1
+python-multipart==0.0.20
+pymupdf==1.25.5
+beautifulsoup4==4.13.4
+defusedxml==0.7.1
+gdown==5.2.0

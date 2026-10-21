@@ -1,6 +1,7 @@
 .venv/
 node_modules/
 frontend/dist/
+frontend/visual-dist/
 data/*
 !data/.gitkeep
 .env

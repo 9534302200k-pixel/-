@@ -1,5 +1,9 @@
 export const access = () => sessionStorage.getItem("pulse_access") || "";
 export async function api(path: string, init: RequestInit = {}) {
+  if (import.meta.env.VITE_VISUAL_DEMO === "true") {
+    const { visualApi } = await import("./visual-demo");
+    return visualApi(path, init);
+  }
   const headers: Record<string, string> = {
     Authorization: `Bearer ${access()}`,
   };
